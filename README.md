@@ -1,4 +1,4 @@
-# guests-to-tables-ruby
+# Ruby - guests-to-tables generator
 
 Welcome to guests list generator.
 
