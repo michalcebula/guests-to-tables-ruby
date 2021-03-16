@@ -44,7 +44,6 @@ class GuestsToSeats
   attr_reader :comparator
   attr_reader :guests_array
   attr_accessor :guests_hash
-  attr_accessor :snd_meal_array
   attr_accessor :combinations_array
 
 end
