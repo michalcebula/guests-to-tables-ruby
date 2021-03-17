@@ -14,15 +14,15 @@ module Data
     def hash_update #creates array with third guests seats combination and adds them to guests_hash
 
       while combinations_array.length < 3*tables_number
-        a = 1
-        while a < combinations_array.length
+        passed_comination_counter = 1
+        while passed_comination_counter < combinations_array.length
           combination = guests_array.sample(seats_number)
           combinations_array.each do |element|
             comparsion = element & combination
             if comparsion.length > comparator #comparator depands of guests number and tables number
               break
             else
-              a += 1
+              passed_comination_counter += 1
             end
           end
         end
@@ -36,7 +36,6 @@ module Data
         iter += 1
       end
     end
-
 
     private
     attr_accessor :combinations_array
